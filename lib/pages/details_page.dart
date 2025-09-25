@@ -23,7 +23,19 @@ class DetailsPage extends StatelessWidget {
                 color: Colors.grey,
                 child: contact.imagePath != null
                     ? Image.file(File(contact.imagePath!), fit: BoxFit.cover)
-                    : Image.asset('assets/images/profile_placeholder.png'),
+                    : Center(
+                        child: CircleAvatar(
+                          radius: 90,
+                          backgroundColor: Colors.grey[400],
+                          child: Text(
+                            '${contact.firstName[0]}${contact.lastName[0]}',
+                            style: TextStyle(
+                              fontSize: 100,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
               ),
               Positioned(
                 top: 40,
