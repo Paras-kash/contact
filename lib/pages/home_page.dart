@@ -113,7 +113,7 @@ class _HomePageState extends State<HomePage> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) {
-                                    return DetailsPage( contact: contact);
+                                    return DetailsPage(contact: contact);
                                   },
                                 ),
                               );

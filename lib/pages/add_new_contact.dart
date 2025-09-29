@@ -193,7 +193,7 @@ class _AddContactSheetState extends State<AddContactSheet> {
                       ),
 
                       labelText: 'Last name',
-                      hintText: 'Lasr name',
+                      hintText: 'Last name',
                     ),
                   ),
                 ),

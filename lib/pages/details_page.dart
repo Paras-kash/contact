@@ -46,14 +46,16 @@ class DetailsPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                bottom: 20,
+                bottom: 10,
                 left: 20,
-                child: Text(
-                  '${contact.firstName} ${contact.lastName}',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold,
+                child: Center(
+                  child: Text(
+                    '${contact.firstName} ${contact.lastName}',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
@@ -143,7 +145,7 @@ class DetailsPage extends StatelessWidget {
                     ),
                     child: Container(
                       height: 60,
-                      width: 60, // Add width to make it visible
+                      width: 60,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: Colors.grey[200],
